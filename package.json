@@ -1,0 +1,27 @@
+{
+  "name": "mv-wk3_Ilera-Search",
+  "version": "1.0.0",
+  "description": "Ilera Search is a make believe directory for nearby hospitals. It also allows users register in hospitals and book hospital appointments beforehand. - Week 4 Capstone Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuaivie/mv-wk4_Ilera-Search"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshuaivie/mv-wk4_Ilera-Search/issues"
+  },
+  "homepage": "https://github.com/joshuaivie/mv-wk4_Ilera-Search#readme",
+  "devDependencies": {
+    "hint": "^6.0.7",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.17.2"
+  }
+}
