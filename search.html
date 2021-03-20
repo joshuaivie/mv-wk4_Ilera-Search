@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilera: Search</title>
+
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+  <!-- Import Vendor CSS  -->
+  <link rel="stylesheet" href="./assets/vendor/bootstrap-5.0/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/vendor/fontawesome-5.15.2/css/all.css">
+
+  <!-- Import Main CSS  -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+</head>
+
+<body class="d-flex flex-column h-100">
+  <header class="d-flex text-white bg-primary flex-column flex-md-row align-items-center p-3 px-md-4 shadow">
+    <div class="my-0 me-md-auto fw-normal"><img src="./assets/img/ilera-logo-white.svg" alt="Ilera-logo" class="logo">
+    </div>
+    <nav class="my-2 my-md-0 me-md-3 mt-3 mt-md-0">
+      <ul class="nav">
+        <li class="nav-item ms-4">
+          <a href="#" class="d-flex align-items-center text-white px-2 px-md-0">
+            <i class="fas fa-search fa-fw d-block"></i>
+            <span class="nav-link active px-2 d-none d-md-block">Hospitals</span>
+          </a>
+        </li>
+        <li class="nav-item ms-4">
+          <a href="#" class="d-flex align-items-center text-white px-2 px-md-0">
+            <i class="fas fa-building fa-fw d-block"></i>
+            <span class="nav-link px-2 d-none d-md-block">About</span>
+          </a>
+        </li>
+        <li class="nav-item ms-4">
+          <a href="#" class="d-flex align-items-center text-white px-2 px-md-0">
+            <i class="fas fa-blog fa-fw d-block"></i>
+            <span class="nav-link px-2 d-none d-md-block">Blog</span>
+          </a>
+        </li>
+        <li class="nav-item ms-4">
+          <a href="#" class="d-flex align-items-center text-white px-2 px-md-0">
+            <i class="fas fa-bars fa-fw d-block"></i>
+            <span class="nav-link px-2 d-none d-md-block">More</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 search-hero page-section">
+          <section class="hero-content p-4 p-md-0 w-100">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+
+                  <h4 class="d-block fw-bolder mb-4 section-title left-title align-self-baseline">Search by name, state,
+                    lga,
+                    type,
+                    rating:</h4>
+                  <div class=" mb-4 bg-white-translucent py-3 py-md-4 rounded rounded-3 w-100">
+                    <form action="#" class="d-flex align-items-center">
+                      <div class="form-group me-1 flex-grow-1 flex-shrink-1">
+                        <label for="hospital name" class="fw-bold fs-6 mb-2 no-wrap">Hospital Name</label>
+                        <input type="text" class="form-control" name="hospital-name" id="hospital-name"
+                          aria-describedby="Search Hospital Name" placeholder="Enter Name">
+                      </div>
+                      <div class="form-group me-1 flex-grow-1 flex-shrink-1">
+                        <label for="state" class="fw-bold fs-6 mb-2">State</label>
+                        <select class="form-control form-select" name="state" id="state"
+                          aria-describedby="Search by State">
+                          <option value="Lagos">Lagos</option>
+                          <option value="Delta">Delta</option>
+                          <option value="Ogun">Ogun</option>
+                          <option value="Oyo">Oyo</option>
+                          <option value="Niger">Niger</option>
+                          <option value="Yobe">Yobe</option>
+                          <option value="Kano">Kano</option>
+                        </select>
+                      </div>
+                      <div class="form-group me-1 flex-grow-1 flex-shrink-1">
+                        <label for="state" class="fw-bold fs-6 mb-2">LGA</label>
+                        <select class="form-control form-select" name="state" id="state"
+                          aria-describedby="Search by State">
+                          <option value="Kosofe">Kosofe</option>
+                          <option value="Ikeja">Ikeja</option>
+                          <option value="Obalende">Obalende</option>
+                          <option value="Oshodi">Oshodi</option>
+                          <option value="Festac">Festac</option>
+                          <option value="Eti-Osa">Eti-Osa</option>
+                          <option value="Mushin">Mushin</option>
+                        </select>
+                      </div>
+                      <div class="form-group me-1 flex-grow-1 flex-shrink-1">
+                        <label for="state" class="fw-bold fs-6 mb-2">Type</label>
+                        <select class="form-control form-select" name="state" id="state"
+                          aria-describedby="Search by State">
+                          <option value="FGH">Community Hospital</option>
+                          <option value="CH">Federal Government Hospital</option>
+                          <option value="PH">Psychiatric Hospital</option>
+                          <option value="LTC">Long-term Care</option>
+                        </select>
+                      </div>
+                      <div class="form-group me-1 flex-grow-1 flex-shrink-1">
+                        <label for="state" class="fw-bold fs-6 mb-2">Rating</label>
+                        <select class="form-control form-select" name="state" id="state"
+                          aria-describedby="Search by State">
+                          <option value="5 Stars">5 Stars</option>
+                          <option value="4 Stars">4 Stars</option>
+                          <option value="3 Stars">3 Stars</option>
+                          <option value="2 Stars">2 Stars</option>
+                          <option value="1 Star">1 Star</option>
+                        </select>
+                      </div>
+
+                      <button class="btn btn-primary fw-bold px-3 align-self-end me-1 flex-grow-1 flex-shrink-1"
+                        type="submit">Search</button>
+                      <button
+                        class="btn btn-secondary text-white fw-bold px-3 align-self-end no-wrap flex-grow-1 flex-shrink-1"
+                        type="button"><i class="fas fa-redo fa-sm"></i>
+                        Reset</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 px-0">
+          <section>
+            <div class="container">
+              <div class="row mb-5">
+                <div class="col-12">
+                  <h1 class="mt-4">Search result found 6 Hospital(s)</h1>
+                  <p class="mb-5">Please note that these are fictional hospitals and the hospital images have been
+                    sourced from
+                    <a href="https://www.gettyimages.com/" class="fw-bold text-normal">getty images</a>.
+                  </p>
+                  <div class="d-grid hospital-grid mb-5">
+                    <article class="card border rounded-5 shadow overflow-hidden">
+                      <div class="image w-100">
+                        <div class="full-image-container position-relative pb-75p overflow-hidden">
+                          <img
+                            src="https://media.gettyimages.com/photos/regional-cancer-center-entrance-picture-id175414126?k=6&m=175414126&s=612x612&w=0&h=5iuU-zxI23_uhGWJGmc7jXWwAW-s_271RCq3gazfw40="
+                            alt="hospital building" class="absolute-centered h-100">
+                        </div>
+                      </div>
+                      <div class="card-body p-4 border-top">
+                        <h5 class="card-title fw-bold mb-3 text-primary">Ire Hospital</h5>
+
+                        <div class="fs-small">
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>State:</strong></span><span class="w-85">
+                              Lagos</span></div>
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>LGA:</strong></span><span class="w-85">
+                              Kosofe</span></div>
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>Type:</strong></span><span class="w-85">
+                              Community Hospital</span></div>
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>Stars:</strong></span><span class="w-85">
+                              <ul class="d-inline-flex list-unstyled">
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star-half fa-sm fa-fw"></i></li>
+                              </ul>
+                            </span></div>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="card border rounded-5 shadow overflow-hidden">
+                      <div class="image w-100">
+                        <div class="full-image-container position-relative pb-75p overflow-hidden">
+                          <img
+                            src="https://media.gettyimages.com/photos/emergency-room-picture-id185079275?k=6&m=185079275&s=612x612&w=0&h=SDZOh6TLDf0ftF06pxBJjjMOrbymfybNvQgwno56OBo="
+                            alt="hospital building" class="absolute-centered h-100">
+                        </div>
+                      </div>
+                      <div class="card-body p-4 border-top">
+                        <h5 class="card-title fw-bold mb-3 text-primary">Grace Specialist Clinic</h5>
+
+                        <div class="fs-small">
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>State:</strong></span><span class="w-85">
+                              Lagos</span></div>
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>LGA:</strong></span><span class="w-85">
+                              Kosofe</span></div>
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>Type:</strong></span><span class="w-85">
+                              Community Hospital</span></div>
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>Stars:</strong></span><span class="w-85">
+                              <ul class="d-inline-flex list-unstyled">
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                              </ul>
+                            </span></div>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="card border rounded-5 shadow overflow-hidden">
+                      <div class="image w-100">
+                        <div class="full-image-container position-relative pb-75p overflow-hidden">
+                          <img
+                            src="https://media.gettyimages.com/photos/new-corporate-brick-building-picture-id157312894?k=6&m=157312894&s=612x612&w=0&h=IS18o7h3LsaifTI2Z2Kh4HZa44gZmUn2UeIoVpW_o_g="
+                            alt="hospital building" class="absolute-centered h-100">
+                        </div>
+                      </div>
+                      <div class="card-body p-4 border-top">
+                        <h5 class="card-title fw-bold mb-3 text-primary">Faith Care Center</h5>
+
+                        <div class="fs-small">
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>State:</strong></span><span class="w-85">
+                              Lagos</span></div>
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>LGA:</strong></span><span class="w-85">
+                              Kosofe</span></div>
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>Type:</strong></span><span class="w-85">
+                              Community Hospital</span></div>
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>Stars:</strong></span><span class="w-85">
+                              <ul class="d-inline-flex list-unstyled">
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star-half fa-sm fa-fw"></i></li>
+                              </ul>
+                            </span></div>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="card border rounded-5 shadow overflow-hidden">
+                      <div class="image w-100">
+                        <div class="full-image-container position-relative pb-75p overflow-hidden">
+                          <img
+                            src="https://media.gettyimages.com/photos/facade-of-hospital-building-picture-id1293918380?k=6&m=1293918380&s=612x612&w=0&h=AJ8v380jiWJNqjWrQ9f0V8N1vGUvLv-XjC5KeJEznAQ="
+                            alt="hospital building" class="absolute-centered h-100">
+                        </div>
+                      </div>
+                      <div class="card-body p-4 border-top">
+                        <h5 class="card-title fw-bold mb-3 text-primary">Peace Specialist Hospital</h5>
+
+                        <div class="fs-small">
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>State:</strong></span><span class="w-85">
+                              Lagos</span></div>
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>LGA:</strong></span><span class="w-85">
+                              Kosofe</span></div>
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>Type:</strong></span><span class="w-85">
+                              Community Hospital</span></div>
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>Stars:</strong></span><span class="w-85">
+                              <ul class="d-inline-flex list-unstyled">
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                              </ul>
+                            </span></div>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="card border rounded-5 shadow overflow-hidden">
+                      <div class="image w-100">
+                        <div class="full-image-container position-relative pb-75p overflow-hidden">
+                          <img
+                            src="https://media.gettyimages.com/photos/contemporary-offices-picture-id171211967?k=6&m=171211967&s=612x612&w=0&h=rODcCXaDjIM9sbKz8ugnffJErZ3XDjWlb5Pd72r9964="
+                            alt="hospital building" class="absolute-centered h-100">
+                        </div>
+                      </div>
+                      <div class="card-body p-4 border-top">
+                        <h5 class="card-title fw-bold mb-3 text-primary">Joy General Wellness Clinic</h5>
+
+                        <div class="fs-small">
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>State:</strong></span><span class="w-85">
+                              Lagos</span></div>
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>LGA:</strong></span><span class="w-85">
+                              Kosofe</span></div>
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>Type:</strong></span><span class="w-85">
+                              Community Hospital</span></div>
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>Stars:</strong></span><span class="w-85">
+                              <ul class="d-inline-flex list-unstyled">
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                              </ul>
+                            </span></div>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="card border rounded-5 shadow overflow-hidden">
+                      <div class="image w-100">
+                        <div class="full-image-container position-relative pb-75p overflow-hidden">
+                          <img
+                            src="https://media.gettyimages.com/photos/siriraj-hospital-a-major-government-hospital-in-bangkok-thailand-by-picture-id856582346?k=6&m=856582346&s=612x612&w=0&h=_xl-4YzGX4GV_BgjshWBHJQOv9utkQMy8274aO6dp5A="
+                            alt="hospital building" class="absolute-centered h-100">
+                        </div>
+                      </div>
+                      <div class="card-body p-4 border-top">
+                        <h5 class="card-title fw-bold mb-3 text-primary">Ahava Clinic</h5>
+
+                        <div class="fs-small">
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>State:</strong></span><span class="w-85">
+                              Lagos</span></div>
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>LGA:</strong></span><span class="w-85">
+                              Kosofe</span></div>
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>Type:</strong></span><span class="w-85">
+                              Community Hospital</span></div>
+                          <div class="card-text mb-2 d-flex w-100"><span
+                              class="w-15 no-wrap me-2"><strong>Stars:</strong></span><span class="w-85">
+                              <ul class="d-inline-flex list-unstyled">
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                              </ul>
+                            </span></div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer mt-auto">
+    <div class="container-fluid bg-black">
+      <div class="row">
+        <div class="col-12">
+          <div class="container">
+            <div class="row position-relative text-center pt-4 pb-3 text-uppercase fs-small d-flex align-items-center">
+              <div class="col px-0">
+                <div class="nav border-top border-bottom border-1 light-border">
+                  <div class="nav-item col-3">
+                    <a class="nav-link text-white" href="#">Home</a>
+                  </div>
+                  <div class="nav-item col-3">
+                    <a class="nav-link text-white" href="#">Search</a>
+                  </div>
+                  <div class="nav-item col-3">
+                    <a class="nav-link text-white" href="#">About Us</a>
+                  </div>
+                  <div class="nav-item col-3">
+                    <a class="nav-link text-white" href="#">Advertise</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1 px-0">
+                <a href="index.html">
+                  <div class="image w-100 border rounded-circle light-border">
+                    <div class="full-image-container position-relative pb-100p">
+                      <img src="./assets/img/ilera-icon-white.svg" alt="register" class="img-fluid absolute-centered"
+                        width="50%">
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col px-0">
+                <div class="nav border-top border-bottom border-1 light-border">
+                  <div class="nav-item col-3">
+                    <a class="nav-link text-white" href="#">Facebook</a>
+                  </div>
+                  <div class="nav-item col-3">
+                    <a class="nav-link text-white" href="#">Twitter</a>
+                  </div>
+                  <div class="nav-item col-3">
+                    <a class="nav-link text-white" href="#">Blog</a>
+                  </div>
+                  <div class="nav-item col-3">
+                    <a class="nav-link text-white" href="#">Google</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row text-center text-white py-4">
+              <div class="col-4">
+                <h5 class="fw-bold mt-4 mb-5 text-uppercase">Subscribe</h5>
+                <form action="#">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input type="text" class="form-control rounded-0" name="subscribe" id="subscribe-input"
+                        aria-describedby="Enter Email to Subscribe" placeholder="Enter Email">
+                      <button class="btn btn-secondary bg-grey text-white border-0 fw-bold px-4 rounded-0"
+                        type="submit">Subscribe</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-4">
+                <h5 class="fw-bold mt-4 mb-5 text-uppercase">Contact</h5>
+                <p>Have a question for Ilera?
+                  <span class="d-block"><a href="mailto:talk@ilera.com.ng"
+                      class="text-secondary">talk@ilera.com.ng</a></span>
+                </p>
+              </div>
+              <div class="col-4">
+                <h5 class="fw-bold mt-4 mb-5 text-uppercase">About</h5>
+                <p>Ilera Search is a make believe directory for hospitals in Nigeria.<span class="d-inline-block"><a
+                      href="#" class="text-secondary">Learn more.</a></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-grey">
+      <div class="row">
+        <div class="col-12">
+          <div class="container">
+            <div class="row py-3">
+              <div class="col-4">
+                <ul class="d-flex list-unstyled px-0 m-0">
+                  <li class="me-3"><a href="#" class="text-muted"><i class="fab fa-facebook fa-fw"></i></a></li>
+                  <li class="me-3"><a href="#" class="text-muted"><i class="fab fa-twitter fa-fw"></i></a></li>
+                  <li class="me-3"><a href="#" class="text-muted"><i class="fas fa-rss fa-fw"></i></a></li>
+                  <li class="me-3"><a href="#" class="text-muted"><i class="fab fa-google-plus fa-fw"></i></a></li>
+                  <li class="me-3"><a href="#" class="text-muted"><i class="fab fa-instagram fa-fw"></i></a></li>
+                </ul>
+              </div>
+              <div class="col-8 text-muted fs-small d-flex align-items-center justify-content-end">
+                <span class="mx-3">
+                  Copyright Ilera 2021 &#169;
+                </span>
+                <span>
+                  Made with <i class="fas fa-heart fa-fw"></i> in Lagos.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/vendor/bootstrap-5.0/js/bootstrap.bundle.js"></script>
+  <script src="./assets/vendor/fontawesome-5.15.2/js/all.js"></script>
+</body>
+
+</html>
