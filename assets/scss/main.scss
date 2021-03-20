@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;500;600;700&family=Roboto:wght@@400;500;600;700&display=swap');
 
 a {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h1,
@@ -18,11 +18,31 @@ h6 {
   padding-bottom: 50%;
 }
 
+.pb-100p {
+  padding-bottom: 100%;
+}
+
 .absolute-centered {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.bg-grey {
+  background: #343a40;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.fs-small {
+  font-size: small;
+}
+
+.light-border {
+  border-color: #dee2e65e !important;
 }
 
 .hero {
@@ -77,6 +97,16 @@ h6 {
   .section-title {
     display: block;
     position: relative;
+    text-align: center;
+
+    &.left-title {
+      text-align: left;
+
+      &::after {
+        left: 0;
+        transform: translateX(0);
+      }
+    }
 
     &::after {
       content: "";
