@@ -3,8 +3,13 @@ $link-decoration: none;
 
 // Colors 
 $blue:#120BD9;
+$dark: #100ABF;
+$secondary: #F85D24;
 
 // Fonts 
-$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-sans-serif: 'Roboto',
+sans-serif;
+
+$body-color: #333;
 
 @import "../scss/bootstrap.scss";
