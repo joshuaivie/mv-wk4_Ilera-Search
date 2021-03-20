@@ -57,6 +57,14 @@ h6 {
   background-color: #000;
 }
 
+.bg-light-grey {
+  background-color: #98a4a5;
+}
+
+.bg-fade-blue {
+  background-color: #519bd8;
+}
+
 .fs-small {
   font-size: small;
 }
@@ -135,13 +143,17 @@ h6 {
       }
     }
 
+    &.after-white::after {
+      background: #fff;
+    }
+
     &::after {
       content: "";
       display: block;
       position: absolute;
       width: 75px;
       height: 3px;
-      background: #f85d24;
+      background: #e5ac5b;
       left: 50%;
       transform: translateX(-50%);
       border-radius: 1.5px;
