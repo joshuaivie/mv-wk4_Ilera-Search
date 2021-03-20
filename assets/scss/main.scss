@@ -34,6 +34,10 @@ h6 {
   width: 85% !important;
 }
 
+.w-1 {
+  width: 1%;
+}
+
 .absolute-centered {
   position: absolute;
   left: 50%;
@@ -104,7 +108,6 @@ h6 {
   .bg-white-translucent {
     background-color: rgba(255, 255, 255, 0.85);
   }
-
 }
 
 .page-section {
@@ -166,7 +169,7 @@ h6 {
 }
 
 .hospital-grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   column-gap: 45px;
   row-gap: 45px;
 }
@@ -178,8 +181,39 @@ h6 {
     }
   }
 
+  .hospital-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 45px;
+    row-gap: 45px;
+  }
+
   .how-it-works {
     grid-template-columns: repeat(2, 1fr) !important;
     grid-template-rows: repeat(2, 1fr) !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .w-md-100 {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hospital-grid {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 35px;
+    row-gap: 35px;
+  }
+
+  .w-lg-1 {
+    width: 1%;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .hospital-grid {
+    column-gap: 45px;
+    row-gap: 45px;
   }
 }
