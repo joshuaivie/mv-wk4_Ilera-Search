@@ -130,8 +130,8 @@ h6 {
       text-align: left;
 
       &::after {
-        left: 0;
-        transform: translateX(0);
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
 
@@ -193,6 +193,22 @@ h6 {
       width: 75%;
     }
   }
+
+  .section-title {
+    display: block;
+    position: relative;
+    text-align: center;
+
+    &.left-title {
+      text-align: left;
+
+      &::after {
+        left: 0 !important;
+        transform: translateX(0) !important;
+      }
+    }
+  }
+
 
   .hospital-grid {
     grid-template-columns: repeat(2, 1fr);

@@ -124,8 +124,8 @@ h6 {
   text-align: left;
 }
 .page-section .section-title.left-title::after {
-  left: 0;
-  transform: translateX(0);
+  left: 50%;
+  transform: translateX(-50%);
 }
 .page-section .section-title::after {
   content: "";
@@ -179,6 +179,19 @@ h6 {
 @media only screen and (min-width: 768px) {
   .hero .hero-content {
     width: 75%;
+  }
+
+  .section-title {
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+  .section-title.left-title {
+    text-align: left;
+  }
+  .section-title.left-title::after {
+    left: 0 !important;
+    transform: translateX(0) !important;
   }
 
   .hospital-grid {
