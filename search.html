@@ -68,14 +68,13 @@
                   <div class=" mb-4 bg-white-translucent py-3 py-md-4 rounded rounded-3 w-100">
                     <form action="#" class="d-flex align-items-center flex-wrap flex-md-nowrap">
                       <div class="form-group me-2 me-md-1 mb-3 flex-grow-1 flex-shrink-1">
-                        <label for="hospital name" class="fw-bold fs-6 mb-2 no-wrap">Hospital Name</label>
+                        <label for="hospital-name" class="fw-bold fs-6 mb-2 no-wrap">Hospital Name</label>
                         <input type="text" class="form-control" name="hospital-name" id="hospital-name"
-                          aria-describedby="Search Hospital Name" placeholder="Enter Name">
+                          aria-describedby="hospital-name" placeholder="Enter Name">
                       </div>
                       <div class="form-group me-2 me-md-1 mb-3 flex-grow-1 flex-shrink-1">
                         <label for="state" class="fw-bold fs-6 mb-2">State</label>
-                        <select class="form-control form-select" name="state" id="state"
-                          aria-describedby="Search by State">
+                        <select class="form-control form-select" name="state" id="state">
                           <option value="Lagos">Lagos</option>
                           <option value="Delta">Delta</option>
                           <option value="Ogun">Ogun</option>
@@ -86,9 +85,8 @@
                         </select>
                       </div>
                       <div class="form-group me-2 me-md-1 mb-3 flex-grow-1 flex-shrink-1">
-                        <label for="state" class="fw-bold fs-6 mb-2">LGA</label>
-                        <select class="form-control form-select" name="state" id="state"
-                          aria-describedby="Search by State">
+                        <label for="lga" class="fw-bold fs-6 mb-2">LGA</label>
+                        <select class="form-control form-select" name="lga" id="lga">
                           <option value="Kosofe">Kosofe</option>
                           <option value="Ikeja">Ikeja</option>
                           <option value="Obalende">Obalende</option>
@@ -100,8 +98,7 @@
                       </div>
                       <div class="form-group me-2 me-md-1 mb-3 flex-grow-1 flex-shrink-1">
                         <label for="state" class="fw-bold fs-6 mb-2">Type</label>
-                        <select class="form-control form-select" name="state" id="state"
-                          aria-describedby="Search by State">
+                        <select class="form-control form-select" name="state" id="type">
                           <option value="FGH">Community Hospital</option>
                           <option value="CH">Federal Government Hospital</option>
                           <option value="PH">Psychiatric Hospital</option>
@@ -110,8 +107,7 @@
                       </div>
                       <div class="form-group me-2 me-md-1 mb-3 flex-grow-1 flex-shrink-1">
                         <label for="state" class="fw-bold fs-6 mb-2">Rating</label>
-                        <select class="form-control form-select" name="state" id="state"
-                          aria-describedby="Search by State">
+                        <select class="form-control form-select" name="state" id="ratings">
                           <option value="5 Stars">5 Stars</option>
                           <option value="4 Stars">4 Stars</option>
                           <option value="3 Stars">3 Stars</option>
@@ -169,8 +165,9 @@
                             <div class="card-text mb-2 d-flex w-100"><span
                                 class="w-15 no-wrap me-2"><strong>Type:</strong></span><span class="w-85">
                                 Community Hospital</span></div>
-                            <div class="card-text mb-2 d-flex w-100"><span
-                                class="w-15 no-wrap me-2"><strong>Stars:</strong></span><span class="w-85">
+                            <div class="card-text mb-2 d-flex w-100">
+                              <div class="w-15 no-wrap me-2"><strong>Stars:</strong></div>
+                              <div class="w-85">
                                 <ul class="d-inline-flex list-unstyled">
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
@@ -178,7 +175,8 @@
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                   <li class="me-2 text-secondary"><i class="fas fa-star-half fa-sm fa-fw"></i></li>
                                 </ul>
-                              </span></div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </article>
@@ -205,8 +203,9 @@
                             <div class="card-text mb-2 d-flex w-100"><span
                                 class="w-15 no-wrap me-2"><strong>Type:</strong></span><span class="w-85">
                                 Community Hospital</span></div>
-                            <div class="card-text mb-2 d-flex w-100"><span
-                                class="w-15 no-wrap me-2"><strong>Stars:</strong></span><span class="w-85">
+                            <div class="card-text mb-2 d-flex w-100">
+                              <div class="w-15 no-wrap me-2"><strong>Stars:</strong></div>
+                              <div class="w-85">
                                 <ul class="d-inline-flex list-unstyled">
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
@@ -214,7 +213,8 @@
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                 </ul>
-                              </span></div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </article>
@@ -241,14 +241,16 @@
                             <div class="card-text mb-2 d-flex w-100"><span
                                 class="w-15 no-wrap me-2"><strong>Type:</strong></span><span class="w-85">
                                 Community Hospital</span></div>
-                            <div class="card-text mb-2 d-flex w-100"><span
-                                class="w-15 no-wrap me-2"><strong>Stars:</strong></span><span class="w-85">
+                            <div class="card-text mb-2 d-flex w-100">
+                              <div class="w-15 no-wrap me-2"><strong>Stars:</strong></div>
+                              <div class="w-85">
                                 <ul class="d-inline-flex list-unstyled">
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                   <li class="me-2 text-secondary"><i class="fas fa-star-half fa-sm fa-fw"></i></li>
                                 </ul>
-                              </span></div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </article>
@@ -275,8 +277,9 @@
                             <div class="card-text mb-2 d-flex w-100"><span
                                 class="w-15 no-wrap me-2"><strong>Type:</strong></span><span class="w-85">
                                 Community Hospital</span></div>
-                            <div class="card-text mb-2 d-flex w-100"><span
-                                class="w-15 no-wrap me-2"><strong>Stars:</strong></span><span class="w-85">
+                            <div class="card-text mb-2 d-flex w-100">
+                              <div class="w-15 no-wrap me-2"><strong>Stars:</strong></div>
+                              <div class="w-85">
                                 <ul class="d-inline-flex list-unstyled">
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
@@ -284,7 +287,8 @@
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                 </ul>
-                              </span></div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </article>
@@ -311,8 +315,9 @@
                             <div class="card-text mb-2 d-flex w-100"><span
                                 class="w-15 no-wrap me-2"><strong>Type:</strong></span><span class="w-85">
                                 Community Hospital</span></div>
-                            <div class="card-text mb-2 d-flex w-100"><span
-                                class="w-15 no-wrap me-2"><strong>Stars:</strong></span><span class="w-85">
+                            <div class="card-text mb-2 d-flex w-100">
+                              <div class="w-15 no-wrap me-2"><strong>Stars:</strong></div>
+                              <div class="w-85">
                                 <ul class="d-inline-flex list-unstyled">
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
@@ -320,7 +325,8 @@
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                 </ul>
-                              </span></div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </article>
@@ -347,8 +353,9 @@
                             <div class="card-text mb-2 d-flex w-100"><span
                                 class="w-15 no-wrap me-2"><strong>Type:</strong></span><span class="w-85">
                                 Community Hospital</span></div>
-                            <div class="card-text mb-2 d-flex w-100"><span
-                                class="w-15 no-wrap me-2"><strong>Stars:</strong></span><span class="w-85">
+                            <div class="card-text mb-2 d-flex w-100">
+                              <div class="w-15 no-wrap me-2"><strong>Stars:</strong></div>
+                              <div class="w-85">
                                 <ul class="d-inline-flex list-unstyled">
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
@@ -356,7 +363,8 @@
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                 </ul>
-                              </span></div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </article>
@@ -382,8 +390,8 @@
                   <a href="index.html">
                     <div class="image w-100 border rounded-circle light-border">
                       <div class="full-image-container position-relative pb-100p">
-                        <img src="./assets/img/ilera-icon-white.svg" alt="register" class="img-fluid absolute-centered"
-                          width="50%">
+                        <img src="./assets/img/ilera-icon-white.svg" alt="register"
+                          class="img-fluid absolute-centered w-50">
                       </div>
                     </div>
                   </a>
@@ -409,8 +417,8 @@
                 <a href="index.html">
                   <div class="image w-100 border rounded-circle light-border">
                     <div class="full-image-container position-relative pb-100p">
-                      <img src="./assets/img/ilera-icon-white.svg" alt="register" class="img-fluid absolute-centered"
-                        width="50%">
+                      <img src="./assets/img/ilera-icon-white.svg" alt="register"
+                        class="img-fluid absolute-centered w-50">
                     </div>
                   </div>
                 </a>
@@ -440,7 +448,7 @@
                   <div class="form-group">
                     <div class="input-group flex-lg-row flex-md-column flex-row">
                       <input type="text" class="form-control rounded-0 w-lg-1 w-md-100 w-1" name="subscribe"
-                        id="subscribe-input" aria-describedby="Enter Email to Subscribe" placeholder="Enter Email">
+                        id="subscribe-input" placeholder="Enter Email">
                       <button class="btn btn-secondary bg-grey text-white border-0 fw-bold px-4 rounded-0"
                         type="submit">Subscribe</button>
                     </div>

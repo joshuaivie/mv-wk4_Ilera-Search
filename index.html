@@ -65,13 +65,13 @@
                     Hospital</label>
                   <div class="input-group">
                     <input type="text" class="form-control" name="search-hospitals" id="searchHospitals"
-                      aria-describedby="Search Nearby Hospitals" placeholder="Enter Location">
+                      aria-describedby="search-hospitals-label" placeholder="Enter Location">
                     <button class="btn btn-primary fw-bold px-5" type="submit">Search</button>
                   </div>
                 </div>
               </form>
             </div>
-            <button class="btn btn-secondary btn-sm px-4 align-self-center fw-bold text-white">How it
+            <button type="button" class="btn btn-secondary btn-sm px-4 align-self-center fw-bold text-white">How it
               Works</button>
           </section>
         </div>
@@ -88,7 +88,7 @@
                       <div class="image w-100">
                         <div class="full-image-container position-relative pb-50p">
                           <img src="./assets/img/search.svg" alt="search" class="img-fluid absolute-centered"
-                            width="80px">
+                            width="80">
                         </div>
                       </div>
                       <h5 class="fw-bold">1. Search</h5>
@@ -100,7 +100,7 @@
                     <article class="w-75 m-auto">
                       <div class="image w-100">
                         <div class="full-image-container position-relative pb-50p">
-                          <img src="./assets/img/find.svg" alt="find" class="img-fluid absolute-centered" width="80px">
+                          <img src="./assets/img/find.svg" alt="find" class="img-fluid absolute-centered" width="80">
                         </div>
                       </div>
                       <h5 class="fw-bold">2. Locate</h5>
@@ -111,7 +111,7 @@
                       <div class="image w-100">
                         <div class="full-image-container position-relative pb-50p">
                           <img src="./assets/img/sign-up.svg" alt="register" class="img-fluid absolute-centered"
-                            width="80px">
+                            width="80">
                         </div>
                       </div>
                       <h5 class="fw-bold">3. Register</h5>
@@ -122,7 +122,7 @@
                       <div class="image w-100">
                         <div class="full-image-container position-relative pb-50p">
                           <img src="./assets/img/schedule.svg" alt="schedule" class="img-fluid absolute-centered"
-                            width="80px">
+                            width="80">
                         </div>
                       </div>
                       <h5 class="fw-bold">4. Schedule</h5>
@@ -212,14 +212,27 @@
       <div class="row">
         <div class="col-12">
           <div class="container">
-            <div class="row position-relative text-center pt-4 pb-3 text-uppercase fs-small d-flex align-items-center">
-              <div class="col px-0">
+            <div
+              class="row position-relative text-center pt-4 pb-3 text-uppercase fs-small d-flex align-items-center no-wrap">
+              <div class="col-12">
+                <div class="d-lg-none d-block px-0 w-15 m-auto mb-2 mb-lg-0">
+                  <a href="index.html">
+                    <div class="image w-100 border rounded-circle light-border">
+                      <div class="full-image-container position-relative pb-100p">
+                        <img src="./assets/img/ilera-icon-white.svg" alt="register"
+                          class="img-fluid absolute-centered w-50">
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg col-md-6 px-0">
                 <div class="nav border-top border-bottom border-1 light-border mb-2 mb-md-0">
                   <div class="nav-item col-3">
-                    <a class="nav-link text-white" href="#">Home</a>
+                    <a class="nav-link text-white" href="index.html">Home</a>
                   </div>
                   <div class="nav-item col-3">
-                    <a class="nav-link text-white" href="#">Search</a>
+                    <a class="nav-link text-white" href="search.html">Search</a>
                   </div>
                   <div class="nav-item col-3">
                     <a class="nav-link text-white" href="#">About Us</a>
@@ -229,17 +242,17 @@
                   </div>
                 </div>
               </div>
-              <div class="col-1 px-0">
+              <div class="col-lg-1 d-lg-block d-none px-0">
                 <a href="index.html">
                   <div class="image w-100 border rounded-circle light-border">
                     <div class="full-image-container position-relative pb-100p">
-                      <img src="./assets/img/ilera-icon-white.svg" alt="register" class="img-fluid absolute-centered"
-                        width="50%">
+                      <img src="./assets/img/ilera-icon-white.svg" alt="register"
+                        class="img-fluid absolute-centered w-50">
                     </div>
                   </div>
                 </a>
               </div>
-              <div class="col px-0">
+              <div class="col-lg col-md-6 px-0">
                 <div class="nav border-top border-bottom border-1 light-border">
                   <div class="nav-item col-3">
                     <a class="nav-link text-white" href="#">Facebook</a>
@@ -258,30 +271,30 @@
 
             </div>
             <div class="row text-center text-white py-4">
-              <div class="col-4">
+              <div class="col-md-4 col-12 mb-3 mb-md-0">
                 <h5 class="fw-bold mt-4 mb-5 text-uppercase">Subscribe</h5>
                 <form action="#">
                   <div class="form-group">
-                    <div class="input-group">
-                      <input type="text" class="form-control rounded-0" name="subscribe" id="subscribe-input"
-                        aria-describedby="Enter Email to Subscribe" placeholder="Enter Email">
+                    <div class="input-group flex-lg-row flex-md-column flex-row">
+                      <input type="text" class="form-control rounded-0 w-lg-1 w-md-100 w-1" name="subscribe"
+                        id="subscribe-input" placeholder="Enter Email">
                       <button class="btn btn-secondary bg-grey text-white border-0 fw-bold px-4 rounded-0"
                         type="submit">Subscribe</button>
                     </div>
                   </div>
                 </form>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-12 mb-3 mb-md-0">
                 <h5 class="fw-bold mt-4 mb-5 text-uppercase">Contact</h5>
                 <p>Have a question for Ilera?
                   <span class="d-block"><a href="mailto:talk@ilera.com.ng"
                       class="text-secondary">talk@ilera.com.ng</a></span>
                 </p>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-12 mb-3 mb-md-0">
                 <h5 class="fw-bold mt-4 mb-5 text-uppercase">About</h5>
                 <p>Ilera Search is a make believe directory for hospitals in Nigeria.<span class="d-inline-block"><a
-                      href="#" class="text-secondary">Learn more.</a></span></p>
+                      href="#" class="text-secondary">&nbsp;Learn more.</a></span></p>
               </div>
             </div>
           </div>
@@ -293,8 +306,8 @@
         <div class="col-12">
           <div class="container">
             <div class="row py-3">
-              <div class="col-4">
-                <ul class="d-flex list-unstyled px-0 m-0">
+              <div class="col-12 col-sm-4">
+                <ul class="d-flex list-unstyled px-0 m-0 justify-content-center justify-content-sm-start">
                   <li class="me-3"><a href="#" class="text-muted"><i class="fab fa-facebook fa-fw"></i></a></li>
                   <li class="me-3"><a href="#" class="text-muted"><i class="fab fa-twitter fa-fw"></i></a></li>
                   <li class="me-3"><a href="#" class="text-muted"><i class="fas fa-rss fa-fw"></i></a></li>
@@ -302,7 +315,8 @@
                   <li class="me-3"><a href="#" class="text-muted"><i class="fab fa-instagram fa-fw"></i></a></li>
                 </ul>
               </div>
-              <div class="col-8 text-muted fs-small d-flex align-items-center justify-content-end">
+              <div
+                class="col-12 col-sm-8 text-muted fs-small d-flex align-items-center justify-content-center justify-content-sm-end mt-2 mt-sm-0">
                 <span class="mx-3">
                   Copyright Ilera 2021 &#169;
                 </span>

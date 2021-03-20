@@ -117,8 +117,9 @@
                             <div class="card-text mb-2 d-flex w-100"><span
                                 class="w-15 no-wrap me-2"><strong>Type:</strong></span><span class="w-85">
                                 Community Hospital</span></div>
-                            <div class="card-text mb-2 d-flex w-100"><span
-                                class="w-15 no-wrap me-2"><strong>Stars:</strong></span><span class="w-85">
+                            <div class="card-text mb-2 d-flex w-100">
+                              <div class="w-15 no-wrap me-2"><strong>Stars:</strong></div>
+                              <div class="w-85">
                                 <ul class="d-inline-flex list-unstyled">
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
@@ -126,14 +127,15 @@
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                   <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
                                 </ul>
-                              </span></div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </article>
                     </div>
                     <div class="col-12 col-lg-4 col-xl-12">
                       <h5 class="mt-xl-4 mt-0 mb-3 fw-bold">Contact Info</h5>
-                      <article class="card border rounded-5 shadow-sm overflow-hidden mb-3 h-249-f mx-auto">
+                      <div class="card border rounded-5 shadow-sm overflow-hidden mb-3 h-249-f mx-auto">
                         <div class="image w-100">
                           <div class="full-image-container position-relative pb-100p overflow-hidden">
                             <div class="absolute-centered h-100 w-100" id="ahavaMap"></div>
@@ -152,11 +154,11 @@
                                 <a class="text-normal" href="#">https://www.ahava.com</a></span></div>
                           </div>
                         </div>
-                      </article>
+                      </div>
                     </div>
                     <div class="col-12 col-lg-4 col-xl-12">
                       <h5 class="mb-3 mt-xl-4 mt-0 fw-bold">Ahava Clinic Profile</h5>
-                      <article class="card border rounded-5 shadow-sm overflow-hidden mb-3 h-249-f mx-auto">
+                      <div class="card border rounded-5 shadow-sm overflow-hidden mb-3 h-249-f mx-auto">
                         <div class="card-body p-4 border-top">
                           <div class="fs-small">
                             <div class="card-text mb-2 d-flex w-100"><span
@@ -169,13 +171,15 @@
                             <div class="card-text mb-2 d-flex w-100"><span
                                 class="w-25 no-wrap me-2"><strong>Doctors:</strong></span><span class="w-75">
                                 15</span></div>
-                            <div class="card-text mb-2 d-flex w-100"><span
-                                class="w-25 no-wrap me-2"><strong>Services:</strong></span><span class="w-75">
-                                <span class="w-85">
-                                  Day Surgery, Laboratory services & Palliative Care.</span></div>
+                            <div class="card-text mb-2 d-flex w-100">
+                              <span class="w-25 no-wrap me-2"><strong>Services:</strong>
+                              </span>
+                              <span class="w-85">
+                                Day Surgery, Laboratory services & Palliative Care.</span>
+                            </div>
                           </div>
                         </div>
-                      </article>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -189,50 +193,50 @@
                         <div class="row mb-3">
                           <div class="col-12 col-sm-4">
                             <div class="form-group mb-3">
-                              <label for="first name" class="fw-bold fs-6 mb-2 no-wrap">First Name</label>
+                              <label for="first-name" id="First-Name-Label" class="fw-bold fs-6 mb-2 no-wrap">First
+                                Name</label>
                               <input type="text" class="form-control" name="first-name" id="first-name"
-                                aria-describedby="First Name" placeholder="Enter Name">
+                                aria-describedby="First-Name-Label" placeholder="Enter Name">
                             </div>
                           </div>
                           <div class="col-12 col-sm-4">
                             <div class="form-group mb-3">
-                              <label for="middle name" class="fw-bold fs-6 mb-2 no-wrap">Middle Name</label>
+                              <label for="middle-name" id="Middle-Name" class="fw-bold fs-6 mb-2 no-wrap">Middle
+                                Name</label>
                               <input type="text" class="form-control" name="middle-name" id="middle-name"
-                                aria-describedby="Middle Name" placeholder="Enter Name">
+                                aria-describedby="Middle-Name" placeholder="Enter Name">
                             </div>
                           </div>
                           <div class="col-12 col-sm-4">
                             <div class="form-group mb-3">
-                              <label for="surname name" class="fw-bold fs-6 mb-2 no-wrap">Surname Name</label>
+                              <label for="surname-name" class="fw-bold fs-6 mb-2 no-wrap">Surname Name</label>
                               <input type="text" class="form-control" name="surname-name" id="surname-name"
-                                aria-describedby="Surname Name" placeholder="Enter Name">
+                                placeholder="Enter Name">
                             </div>
                           </div>
                         </div>
                         <div class="row mb-3">
                           <div class="col-12">
                             <div class="form-group mb-3">
-                              <label for="surname name" class="fw-bold fs-6 no-wrap mb-2">Address</label>
+                              <label for="address-line-1" class="fw-bold fs-6 no-wrap mb-2">Address</label>
                               <input type="text" class="form-control" name="address-line-1" id="address-line-1"
-                                aria-describedby="Address Line 1" placeholder="Address Line 1">
+                                placeholder="Address Line 1">
                               <small class="text-muted mb-3 fs-small d-block pt-1">Street Address</small>
                               <input type="text" class="form-control" name="address-line-2" id="address-line-2"
-                                aria-describedby="Address Line 2" placeholder="Address Line 2">
+                                placeholder="Address Line 2">
                               <small class="text-muted mb-3 fs-small d-block pt-1">Address Line 2</small>
                             </div>
                           </div>
 
                           <div class="col-6">
                             <div class="form-group mb-3">
-                              <input type="text" class="form-control" name="city" id="city" aria-describedby="City"
-                                placeholder="City">
+                              <input type="text" class="form-control" name="city" id="city" placeholder="City">
                               <small class="text-muted mb-3 fs-small d-block pt-1">City</small>
                             </div>
                           </div>
                           <div class="col-6">
                             <div class="form-group mb-3">
-                              <input type="text" class="form-control" name="city" id="State" aria-describedby="State"
-                                placeholder="State">
+                              <input type="text" class="form-control" name="city" id="State" placeholder="State">
                               <small class="text-muted mb-3 fs-small d-block pt-1">State/Province</small>
                             </div>
                           </div>
@@ -240,16 +244,15 @@
                         <div class="row mb-3">
                           <div class="col-12">
                             <div class="form-group mb-3">
-                              <label for="surname name" class="fw-bold fs-6 no-wrap mb-2">Phone</label>
+                              <label for="Area-Code" class="fw-bold fs-6 no-wrap mb-2">Phone</label>
                               <div class="row">
                                 <div class="col-4">
                                   <input type="text" class="form-control" name="Area-Code" id="Area-Code"
-                                    aria-describedby="Area-Code" placeholder="Area Code">
+                                    placeholder="Area Code">
                                   <small class="text-muted mb-3 fs-small d-block pt-1">Area Code</small>
                                 </div>
                                 <div class="col-8">
-                                  <input type="text" class="form-control" name="Phone" id="Phone"
-                                    aria-describedby="Phone" placeholder="Phone">
+                                  <input type="text" class="form-control" name="Phone" id="Phone" placeholder="Phone">
                                   <small class="text-muted mb-3 fs-small d-block pt-1">Phone</small>
                                 </div>
                               </div>
@@ -259,10 +262,9 @@
                         <div class="row mb-3">
                           <div class="col-12">
                             <div class="form-group mb-3">
-                              <label for="surname name" class="fw-bold fs-6 no-wrap mb-2">Email
+                              <label for="email" class="fw-bold fs-6 no-wrap mb-2">Email
                                 <small>(optional)</small></label>
-                              <input type="text" class="form-control" name="email" id="email" aria-describedby="email"
-                                placeholder="email">
+                              <input type="text" class="form-control" name="email" id="email" placeholder="email">
                             </div>
                           </div>
                         </div>
@@ -270,9 +272,8 @@
                         <div class="row mb-3">
                           <div class="col-4">
                             <div class="form-group mb-3">
-                              <label for="surname name" class="fw-bold fs-6 no-wrap mb-2">Gender</label>
-                              <select class="form-control form-select" name="gender" id="gender"
-                                aria-describedby="gender">
+                              <label for="gender" class="fw-bold fs-6 no-wrap mb-2">Gender</label>
+                              <select class="form-control form-select" name="gender" id="gender">
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
                               </select>
@@ -280,12 +281,11 @@
                           </div>
                           <div class="col-8">
                             <div class="form-group mb-3">
-                              <label for="surname name" class="fw-bold fs-6 no-wrap mb-2">Date of Birth</label>
+                              <label for="date" class="fw-bold fs-6 no-wrap mb-2">Date of Birth</label>
                               <div class="row">
                                 <div class="col-4">
                                   <div class="form-group mb-3">
-                                    <select class="form-control form-select" name="date" id="date"
-                                      aria-describedby="date">
+                                    <select class="form-control form-select" name="date" id="date">
                                       <option value="25">25</option>
                                       <option value="26">26</option>
                                       <option value="27">27</option>
@@ -296,8 +296,7 @@
                                 </div>
                                 <div class="col-4">
                                   <div class="form-group mb-3">
-                                    <select class="form-control form-select" name="month" id="month"
-                                      aria-describedby="month">
+                                    <select class="form-control form-select" name="month" id="month">
                                       <option value="10">10</option>
                                       <option value="11">11</option>
                                       <option value="...">...</option>
@@ -307,8 +306,7 @@
                                 </div>
                                 <div class="col-4">
                                   <div class="form-group mb-3">
-                                    <select class="form-control form-select" name="year" id="year"
-                                      aria-describedby="year">
+                                    <select class="form-control form-select" name="year" id="year">
                                       <option value="1997">1997</option>
                                       <option value="1998">1998</option>
                                       <option value="1999">1999</option>
@@ -323,15 +321,15 @@
                           </div>
                         </div>
                         <hr class="mt-2 mb-4">
-                        </hr>
 
                         <div class="row mb-3">
                           <div class="col-12">
                             <div class="form-group mb-3">
-                              <label for="surname name" class="fw-bold fs-6 no-wrap mb-2">Reason for
+                              <label for="reason-for-registration" id="reason-for-registration-n"
+                                class="fw-bold fs-6 no-wrap mb-2">Reason for
                                 Registration</label>
                               <input type="text" class="form-control" name="reason-for-registration"
-                                id="reason-for-registration" aria-describedby="reason-for-registration"
+                                id="reason-for-registration" aria-describedby="reason-for-registration-n"
                                 placeholder="Specify Reason">
                             </div>
                           </div>
@@ -340,12 +338,11 @@
                         <div class="row mb-3">
                           <div class="col-12">
                             <div class="form-group">
-                              <label for="surname name" class="fw-bold fs-6 no-wrap mb-2">Schedule Date</label>
+                              <label for="date-2" class="fw-bold fs-6 no-wrap mb-2">Schedule Date</label>
                               <div class="row">
                                 <div class="col-4">
                                   <div class="form-group mb-3">
-                                    <select class="form-control form-select" name="date" id="date"
-                                      aria-describedby="date">
+                                    <select class="form-control form-select" name="date" id="date-2">
                                       <option value="1">1</option>
                                       <option value="2">2</option>
                                       <option value="3">3</option>
@@ -356,8 +353,7 @@
                                 </div>
                                 <div class="col-4">
                                   <div class="form-group mb-3">
-                                    <select class="form-control form-select" name="month" id="month"
-                                      aria-describedby="month">
+                                    <select class="form-control form-select" name="month" id="month-2">
                                       <option value="1">1</option>
                                       <option value="2">2</option>
                                       <option value="3">3</option>
@@ -368,8 +364,7 @@
                                 </div>
                                 <div class="col-4">
                                   <div class="form-group mb-3">
-                                    <select class="form-control form-select" name="year" id="year"
-                                      aria-describedby="year">
+                                    <select class="form-control form-select" name="year" id="year-2">
                                       <option value="2020">2020</option>
                                       <option value="2021">2021</option>
                                       <option value="...">...</option>
@@ -414,8 +409,8 @@
                   <a href="index.html">
                     <div class="image w-100 border rounded-circle light-border">
                       <div class="full-image-container position-relative pb-100p">
-                        <img src="./assets/img/ilera-icon-white.svg" alt="register" class="img-fluid absolute-centered"
-                          width="50%">
+                        <img src="./assets/img/ilera-icon-white.svg" alt="register"
+                          class="img-fluid absolute-centered w-50">
                       </div>
                     </div>
                   </a>
@@ -441,8 +436,8 @@
                 <a href="index.html">
                   <div class="image w-100 border rounded-circle light-border">
                     <div class="full-image-container position-relative pb-100p">
-                      <img src="./assets/img/ilera-icon-white.svg" alt="register" class="img-fluid absolute-centered"
-                        width="50%">
+                      <img src="./assets/img/ilera-icon-white.svg" alt="register"
+                        class="img-fluid absolute-centered w-50">
                     </div>
                   </div>
                 </a>
@@ -472,7 +467,7 @@
                   <div class="form-group">
                     <div class="input-group flex-lg-row flex-md-column flex-row">
                       <input type="text" class="form-control rounded-0 w-lg-1 w-md-100 w-1" name="subscribe"
-                        id="subscribe-input" aria-describedby="Enter Email to Subscribe" placeholder="Enter Email">
+                        id="subscribe-input" placeholder="Enter Email">
                       <button class="btn btn-secondary bg-grey text-white border-0 fw-bold px-4 rounded-0"
                         type="submit">Subscribe</button>
                     </div>
