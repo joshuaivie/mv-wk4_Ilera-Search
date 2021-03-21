@@ -2,11 +2,11 @@
 
 # Project: Ilera Search
 
-> Ilera Search is a make believe directory for nearby hospitals. It also allows users register in hospitals and book hospital appointments beforehand. Inspired by the UI designs for [Patashule](https://www.behance.net/gallery/25563385/PatashuleKE). My interpretation of the business requirements for my Microverse HTML and CSS module capstone project.
+> Ilera Search is a make-believe directory for nearby hospitals. It also allows users to register in hospitals and book hospital appointments beforehand. I was inspired by the UI designs for [Patashule](https://www.behance.net/gallery/25563385/PatashuleKE). My interpretation of the business requirements for my Microverse HTML and CSS module capstone project.
 
 ![screenshot](./screenshot.png?raw=true "Screenshot")
 
-Additional description about the project and its features.
+Here are some other descriptions of the project and its features.
 
 ## Built With
 
@@ -19,15 +19,18 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-You can check out our live demo here [here](https://joshuaivie.github.io/mv-wk4_Ilera-Search/)
+You can check out our live demo [here](https://joshuaivie.github.io/mv-wk4_Ilera-Search/)
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running, follow these simple example steps.
+
+Connect your GitHub locally to your PC
+Open your terminal on your OS
+Navigate to the folder/directory in which you want to have this project.
 
 - Clone the project unto your local machine
-- Change directory to the folder.
-- Open index.html with a liveserver or directly in your browser
+- Open index.html with a live server or directly in your browser
 
 ## Authors
 

@@ -49,6 +49,14 @@ h6 {
   color: #333;
 }
 
+.text-red {
+  color: #d3564a;
+}
+
+.text-light-grey {
+  color: #98a4a5;
+}
+
 .bg-grey {
   background: #343a40;
 }
@@ -153,11 +161,15 @@ h6 {
       position: absolute;
       width: 75px;
       height: 3px;
-      background: #e5ac5b;
+      background: #d3564a;
       left: 50%;
       transform: translateX(-50%);
       border-radius: 1.5px;
       bottom: -15px;
+    }
+
+    &.no-after::after {
+      display: none;
     }
   }
 }
