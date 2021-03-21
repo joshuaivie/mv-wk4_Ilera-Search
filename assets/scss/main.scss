@@ -57,6 +57,14 @@ h6 {
   color: #98a4a5;
 }
 
+.text-green {
+  color: #a3bc72;
+}
+
+.text-darker-blue {
+  color: #509bd8;
+}
+
 .bg-grey {
   background: #343a40;
 }
@@ -69,8 +77,16 @@ h6 {
   background-color: #98a4a5;
 }
 
+.bg-lighter-grey {
+  background-color: #f5f5f5;
+}
+
 .bg-fade-blue {
   background-color: #519bd8;
+}
+
+.bg-darker-blue {
+  background-color: #509bd8;
 }
 
 .fs-small {
@@ -174,6 +190,18 @@ h6 {
   }
 }
 
+.details-page {
+  .form-control {
+    background-color: #dfe2e3;
+  }
+
+  .details-grid {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 20px;
+    row-gap: 15px;
+  }
+}
+
 .hospital-profile {
   display: flex;
   align-items: center;
@@ -211,10 +239,26 @@ h6 {
   row-gap: 45px;
 }
 
+.small-arrow {
+  opacity: 0.2;
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 @media only screen and (min-width: 768px) {
   .hero {
     .hero-content {
       width: 75%;
+    }
+  }
+
+  .details-page {
+    .details-grid {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      row-gap: 15px;
     }
   }
 
