@@ -23,12 +23,10 @@ You can check out our live demo [here](https://joshuaivie.github.io/mv-wk4_Ilera
 
 ## Getting Started
 
-To get a local copy up and running, follow these simple example steps.
-
-Connect your GitHub locally to your PC
-Open your terminal on your OS
-Navigate to the folder/directory in which you want to have this project.
-
+- To get a local copy up and running, follow these simple example steps.
+- Connect your GitHub locally to your PC
+- Open your terminal on your OS
+- Navigate to the folder/directory in which you want to have this project.
 - Clone the project unto your local machine
 - Open index.html with a live server or directly in your browser
 
