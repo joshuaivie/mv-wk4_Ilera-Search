@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilera: Ahava Clinic</title>
+
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+  <!-- Import Vendor CSS  -->
+  <link rel="stylesheet" href="./assets/vendor/bootstrap-5.0/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/vendor/fontawesome-5.15.2/css/all.css">
+
+  <!-- Import Main CSS  -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+  <!-- Google Maps  -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwuCYMyS1XoqIgJSg088ooVH2Vupwc2oo&callback=initMap&libraries=&v=weekly"
+    defer></script>
+
+  <script>
+
+    const baseMap = {
+      zoom: 13,
+      disableDefaultUI: true,
+      mapTypeControl: false,
+      scaleControl: true
+    }
+
+    const ahavaLatLng = { lat: 6.564104110934636, lng: 3.3757987340626983 }
+
+    const ahavaMap = {
+      center: ahavaLatLng,
+      ...baseMap
+    }
+
+
+    function initMap() {
+      let map = new google.maps.Map(document.getElementById("ahavaMap"), ahavaMap);
+      new google.maps.Marker({
+        position: ahavaLatLng,
+        map,
+        title: "Ahavah Clinic",
+      });
+    }
+
+  </script>
+
+</head>
+
+<body class="d-flex flex-column h-100">
+  <header class="d-flex text-white bg-primary flex-column flex-md-row align-items-center p-3 px-md-4 shadow">
+    <div class="my-0 me-md-auto fw-normal"><a href="index.html"><img src="./assets/img/ilera-logo-white.svg"
+          alt="Ilera-logo" class="logo"></a>
+    </div>
+    <nav class="my-2 my-md-0 me-md-3 mt-3 mt-md-0">
+      <ul class="nav">
+        <li class="nav-item ms-4">
+          <a href="search.html" class="d-flex align-items-center text-white px-2 px-md-0">
+            <i class="fas fa-search fa-fw d-block"></i>
+            <span class="nav-link active px-2 d-none d-md-block">Hospitals</span>
+          </a>
+        </li>
+        <li class="nav-item ms-4">
+          <a href="#" class="d-flex align-items-center text-white px-2 px-md-0">
+            <i class="fas fa-building fa-fw d-block"></i>
+            <span class="nav-link px-2 d-none d-md-block">About</span>
+          </a>
+        </li>
+        <li class="nav-item ms-4">
+          <a href="#" class="d-flex align-items-center text-white px-2 px-md-0">
+            <i class="fas fa-blog fa-fw d-block"></i>
+            <span class="nav-link px-2 d-none d-md-block">Blog</span>
+          </a>
+        </li>
+        <li class="nav-item ms-4">
+          <a href="#" class="d-flex align-items-center text-white px-2 px-md-0">
+            <i class="fas fa-bars fa-fw d-block"></i>
+            <span class="nav-link px-2 d-none d-md-block">More</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="details-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 hospital-profile page-section">
+          <div class="p-4 p-md-0 w-100">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card border-0 pb-5">
+                    <div class="card-title px-5">
+                      <h4 class="fw-bold section-title left-title">Registration Form</h4>
+                    </div>
+                    <div class="card-body pt-4 px-5">
+                      <form action="#">
+                        <div class="row mb-3">
+                          <div class="col-12 col-sm-4">
+                            <div class="form-group mb-3">
+                              <label for="first-name" id="First-Name-Label" class="fw-bold fs-6 mb-2 no-wrap">First
+                                Name</label>
+                              <input type="text" class="form-control" name="first-name" id="first-name"
+                                aria-describedby="First-Name-Label" placeholder="Enter Name">
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-4">
+                            <div class="form-group mb-3">
+                              <label for="middle-name" id="Middle-Name" class="fw-bold fs-6 mb-2 no-wrap">Middle
+                                Name</label>
+                              <input type="text" class="form-control" name="middle-name" id="middle-name"
+                                aria-describedby="Middle-Name" placeholder="Enter Name">
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-4">
+                            <div class="form-group mb-3">
+                              <label for="surname-name" class="fw-bold fs-6 mb-2 no-wrap">Surname Name</label>
+                              <input type="text" class="form-control" name="surname-name" id="surname-name"
+                                placeholder="Enter Name">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-12">
+                            <div class="form-group mb-3">
+                              <label for="address-line-1" class="fw-bold fs-6 no-wrap mb-2">Address</label>
+                              <input type="text" class="form-control" name="address-line-1" id="address-line-1"
+                                placeholder="Address Line 1">
+                              <small class="text-muted mb-3 fs-small d-block pt-1">Street Address</small>
+                              <input type="text" class="form-control" name="address-line-2" id="address-line-2"
+                                placeholder="Address Line 2">
+                              <small class="text-muted mb-3 fs-small d-block pt-1">Address Line 2</small>
+                            </div>
+                          </div>
+
+                          <div class="col-6">
+                            <div class="form-group mb-3">
+                              <input type="text" class="form-control" name="city" id="city" placeholder="City">
+                              <small class="text-muted mb-3 fs-small d-block pt-1">City</small>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-group mb-3">
+                              <input type="text" class="form-control" name="city" id="State" placeholder="State">
+                              <small class="text-muted mb-3 fs-small d-block pt-1">State/Province</small>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-12">
+                            <div class="form-group mb-3">
+                              <label for="Area-Code" class="fw-bold fs-6 no-wrap mb-2">Phone</label>
+                              <div class="row">
+                                <div class="col-4">
+                                  <input type="text" class="form-control" name="Area-Code" id="Area-Code"
+                                    placeholder="Area Code">
+                                  <small class="text-muted mb-3 fs-small d-block pt-1">Area Code</small>
+                                </div>
+                                <div class="col-8">
+                                  <input type="text" class="form-control" name="Phone" id="Phone" placeholder="Phone">
+                                  <small class="text-muted mb-3 fs-small d-block pt-1">Phone</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-12">
+                            <div class="form-group mb-3">
+                              <label for="email" class="fw-bold fs-6 no-wrap mb-2">Email
+                                <small>(optional)</small></label>
+                              <input type="text" class="form-control" name="email" id="email" placeholder="email">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row mb-3">
+                          <div class="col-4">
+                            <div class="form-group mb-3">
+                              <label for="gender" class="fw-bold fs-6 no-wrap mb-2">Gender</label>
+                              <select class="form-control form-select" name="gender" id="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-8">
+                            <div class="form-group mb-3">
+                              <label for="date" class="fw-bold fs-6 no-wrap mb-2">Date of Birth</label>
+                              <div class="row">
+                                <div class="col-4">
+                                  <div class="form-group mb-3">
+                                    <select class="form-control form-select" name="date" id="date">
+                                      <option value="25">25</option>
+                                      <option value="26">26</option>
+                                      <option value="27">27</option>
+                                      <option value="...">...</option>
+                                    </select>
+                                    <small class="text-muted mb-3 fs-small d-block pt-1">Date</small>
+                                  </div>
+                                </div>
+                                <div class="col-4">
+                                  <div class="form-group mb-3">
+                                    <select class="form-control form-select" name="month" id="month">
+                                      <option value="10">10</option>
+                                      <option value="11">11</option>
+                                      <option value="...">...</option>
+                                    </select>
+                                    <small class="text-muted mb-3 fs-small d-block pt-1">Month</small>
+                                  </div>
+                                </div>
+                                <div class="col-4">
+                                  <div class="form-group mb-3">
+                                    <select class="form-control form-select" name="year" id="year">
+                                      <option value="1997">1997</option>
+                                      <option value="1998">1998</option>
+                                      <option value="1999">1999</option>
+                                      <option value="2000">2000</option>
+                                      <option value="...">...</option>
+                                    </select>
+                                    <small class="text-muted mb-3 fs-small d-block pt-1">Year</small>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="mt-2 mb-4">
+
+                        <div class="row mb-3">
+                          <div class="col-12">
+                            <div class="form-group mb-3">
+                              <label for="reason-for-registration" id="reason-for-registration-n"
+                                class="fw-bold fs-6 no-wrap mb-2">Reason for
+                                Registration</label>
+                              <input type="text" class="form-control" name="reason-for-registration"
+                                id="reason-for-registration" aria-describedby="reason-for-registration-n"
+                                placeholder="Specify Reason">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row mb-3">
+                          <div class="col-12">
+                            <div class="form-group">
+                              <label for="date-2" class="fw-bold fs-6 no-wrap mb-2">Schedule Date</label>
+                              <div class="row">
+                                <div class="col-4">
+                                  <div class="form-group mb-3">
+                                    <select class="form-control form-select" name="date" id="date-2">
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="...">...</option>
+                                    </select>
+                                    <small class="text-muted mb-3 fs-small d-block pt-1">Date</small>
+                                  </div>
+                                </div>
+                                <div class="col-4">
+                                  <div class="form-group mb-3">
+                                    <select class="form-control form-select" name="month" id="month-2">
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="...">...</option>
+                                    </select>
+                                    <small class="text-muted mb-3 fs-small d-block pt-1">Month</small>
+                                  </div>
+                                </div>
+                                <div class="col-4">
+                                  <div class="form-group mb-3">
+                                    <select class="form-control form-select" name="year" id="year-2">
+                                      <option value="2020">2020</option>
+                                      <option value="2021">2021</option>
+                                      <option value="...">...</option>
+                                    </select>
+                                    <small class="text-muted mb-3 fs-small d-block pt-1">Year</small>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row mb-3">
+                          <div class="col-12">
+                            <div class="form-group">
+                              <label for="comments" class="fw-bold fs-6 no-wrap mb-2">Additional Notes</label>
+                              <textarea class="form-control" name="comments" id="comments" rows="5"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-5">
+                          <div class="col-12">
+                            <button class="btn btn-primary text-white me-2 mt-2" type="submit">Sign Up</button>
+                            <button class="btn btn-primary me-2 text-green bg-transparent border-0 mt-2"
+                              type="button">Sign
+                              In</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 mt-4 mt-xl-0">
+                  <div class="row text-center text-lg-start">
+                    <div class="col-12">
+                      <div class="card border-1 shadow-sm pb-5">
+                        <div class="card-title px-5 pt-5 d-flex">
+
+                          <img src="./assets/img/ahava-love.svg" alt="ahava" height="32" class="me-3">
+                          <h2 class="section-title left-title no-after text-primary">Ahava Clinic</h2>
+                        </div>
+                        <div class="card-body pt-4 px-5">
+                          <div class="d-grid details-grid text-center text-uppercase">
+                            <div class="card-text mb-2 w-100 border fw-bold p-3">Type:
+                              <span class="text-darker-blue">Community Hospital</span>
+                            </div>
+                            <div class="card-text mb-2 w-100 border fw-bold p-3">State:
+                              <span class="text-darker-blue">Lagos</span>
+                            </div>
+                            <div class="card-text mb-2 w-100 border fw-bold p-3">LGA:
+                              <span class="text-darker-blue">Kosofe</span>
+                            </div>
+                            <div class="card-text mb-2 w-100 border fw-bold p-3">Stars:
+                              <ul class="d-inline-flex list-unstyled mb-0">
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                                <li class="me-2 text-secondary"><i class="fas fa-star fa-sm fa-fw"></i></li>
+                              </ul>
+                            </div>
+                            <div class="card-text mb-2 w-100 border fw-bold p-3">Doctors:
+                              <span class="text-darker-blue">30 Doctors</span>
+                            </div>
+                            <div class="card-text mb-2 w-100 border fw-bold p-3">Nurses:
+                              <span class="text-darker-blue">50 Doctors</span>
+                            </div>
+                            <div class="card-text mb-2 w-100 border fw-bold p-3">Bed Space:&nbsp;
+                              <span class="text-darker-blue">150 beds</span>
+                            </div>
+                            <div class="card-text mb-2 w-100 border fw-bold p-3">Services:&nbsp;
+                              <span class="text-darker-blue">Day Surgery & Palliative Care</span>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-md-end justify-content-center my-2"><button
+                              class="btn btn-primary text-white text-uppercase fw-bold bg-darker-blue border-0"
+                              type="button">Apply</button>
+                          </div>
+                          <div
+                            class="mt-5 d-flex align-items-center flex-column flex-md-row justify-content-md-end justify-content-center no-wrap">
+                            <div class="card-text mb-2 d-flex align-items-center ms-4"><i
+                                class="fas fa-phone fa-sm fa-fw text-darker-blue me-2"></i>
+                              <a class="text-normal" href="tel:+#">+234 000 000 0000</a>
+                            </div>
+                            <div class="card-text mb-2 d-flex align-items-center ms-4"><i
+                                class="fas fa-mail-bulk fa-sm fa-fw text-darker-blue me-2"></i>
+                              <a class="text-normal" href="mailto:#">hello@ahava.com</a>
+                            </div>
+                            <div class="card-text mb-2 d-flex align-items-center ms-4"><i
+                                class="fab fa-internet-explorer fa-sm fa-fw text-darker-blue me-2"></i>
+                              <a class="text-normal" href="#">https://www.ahava.com</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="d-block py-3 mt-4 mb-3">Ahava clinic is a clinic filled with love and managed in
+                          accordance with a
+                          Hospital Constitution approved by the Charities Regulatory Authority. As an organization, we
+                          believe in the power of LOVE. We love everyone and we especially love our patients. We also
+                          believe in miracles as we have seen them happen over and over again. The power to heal is
+                          here.
+                        </div>
+                      </div>
+
+                      <div class="col-12 mb-5">
+                        <div class="bg-lighter-grey d-block py-4 px-5 text-uppercase fw-bold position-relative"><a
+                            href="#" class="text-normal"><i class="fas fa-arrow-right fa-xs small-arrow"></i> <i
+                              class="fas fa-list fa-fw"></i>&nbsp;&nbsp; Click here to view more
+                            details</a>
+                        </div>
+                      </div>
+
+                      <div class="col-12 mb-5">
+                        <h4 class="section-title d-block text-primary text-uppercase pt-5 no-after mb-2"><i
+                            class="far fa-compass"></i>&nbsp;
+                          Map Directions</h4>
+
+                        <div class="d-block my-3 rounded-5 shadow-sm" id="ahavaMap" style="height: 400px;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer mt-auto">
+    <div class="container-fluid bg-black">
+      <div class="row">
+        <div class="col-12">
+          <div class="container">
+            <div
+              class="row position-relative text-center pt-4 pb-3 text-uppercase fs-small d-flex align-items-center no-wrap">
+              <div class="col-12">
+                <div class="d-lg-none d-block px-0 w-15 m-auto mb-2 mb-lg-0">
+                  <a href="index.html">
+                    <div class="image w-100 border rounded-circle light-border">
+                      <div class="full-image-container position-relative pb-100p">
+                        <img src="./assets/img/ilera-icon-white.svg" alt="register"
+                          class="img-fluid absolute-centered w-50">
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg col-md-6 px-0">
+                <div class="nav border-top border-bottom border-1 light-border mb-2 mb-md-0">
+                  <div class="nav-item col-3">
+                    <a class="nav-link text-white" href="index.html">Home</a>
+                  </div>
+                  <div class="nav-item col-3">
+                    <a class="nav-link text-white" href="search.html">Search</a>
+                  </div>
+                  <div class="nav-item col-3">
+                    <a class="nav-link text-white" href="#">About Us</a>
+                  </div>
+                  <div class="nav-item col-3">
+                    <a class="nav-link text-white" href="#">Advertise</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-1 d-lg-block d-none px-0">
+                <a href="index.html">
+                  <div class="image w-100 border rounded-circle light-border">
+                    <div class="full-image-container position-relative pb-100p">
+                      <img src="./assets/img/ilera-icon-white.svg" alt="register"
+                        class="img-fluid absolute-centered w-50">
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg col-md-6 px-0">
+                <div class="nav border-top border-bottom border-1 light-border">
+                  <div class="nav-item col-3">
+                    <a class="nav-link text-white" href="#">Facebook</a>
+                  </div>
+                  <div class="nav-item col-3">
+                    <a class="nav-link text-white" href="#">Twitter</a>
+                  </div>
+                  <div class="nav-item col-3">
+                    <a class="nav-link text-white" href="#">Blog</a>
+                  </div>
+                  <div class="nav-item col-3">
+                    <a class="nav-link text-white" href="#">Google</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row text-center text-white py-4">
+              <div class="col-md-4 col-12 mb-3 mb-md-0">
+                <h5 class="fw-bold mt-4 mb-5 text-uppercase">Subscribe</h5>
+                <form action="#">
+                  <div class="form-group">
+                    <div class="input-group flex-lg-row flex-md-column flex-row">
+                      <input type="text" class="form-control rounded-0 w-lg-1 w-md-100 w-1" name="subscribe"
+                        id="subscribe-input" placeholder="Enter Email">
+                      <button class="btn btn-secondary bg-grey text-white border-0 fw-bold px-4 rounded-0"
+                        type="submit">Subscribe</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-4 col-12 mb-3 mb-md-0">
+                <h5 class="fw-bold mt-4 mb-5 text-uppercase">Contact</h5>
+                <p>Have a question for Ilera?
+                  <span class="d-block"><a href="mailto:talk@ilera.com.ng"
+                      class="text-secondary">talk@ilera.com.ng</a></span>
+                </p>
+              </div>
+              <div class="col-md-4 col-12 mb-3 mb-md-0">
+                <h5 class="fw-bold mt-4 mb-5 text-uppercase">About</h5>
+                <p>Ilera Search is a make believe directory for hospitals in Nigeria.<span class="d-inline-block"><a
+                      href="#" class="text-secondary">&nbsp;Learn more.</a></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-grey">
+      <div class="row">
+        <div class="col-12">
+          <div class="container">
+            <div class="row py-3">
+              <div class="col-12 col-sm-4">
+                <ul class="d-flex list-unstyled px-0 m-0 justify-content-center justify-content-sm-start">
+                  <li class="me-3"><a href="#" class="text-muted"><i class="fab fa-facebook fa-fw"></i></a></li>
+                  <li class="me-3"><a href="#" class="text-muted"><i class="fab fa-twitter fa-fw"></i></a></li>
+                  <li class="me-3"><a href="#" class="text-muted"><i class="fas fa-rss fa-fw"></i></a></li>
+                  <li class="me-3"><a href="#" class="text-muted"><i class="fab fa-google-plus fa-fw"></i></a></li>
+                  <li class="me-3"><a href="#" class="text-muted"><i class="fab fa-instagram fa-fw"></i></a></li>
+                </ul>
+              </div>
+              <div
+                class="col-12 col-sm-8 text-muted fs-small d-flex align-items-center justify-content-center justify-content-sm-end mt-2 mt-sm-0">
+                <span class="mx-3">
+                  Copyright Ilera 2021 &#169;
+                </span>
+                <span>
+                  Made with <i class="fas fa-heart fa-fw"></i> in Lagos.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/vendor/bootstrap-5.0/js/bootstrap.bundle.js"></script>
+  <script src="./assets/vendor/fontawesome-5.15.2/js/all.js"></script>
+</body>
+
+</html>
